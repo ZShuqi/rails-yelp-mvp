@@ -1,0 +1,15 @@
+<p><strong>Restaurants</strong></p>
+<div class="">
+  <% @restaurants.each do |restaurant| %>
+    <%# <strong><li class="list-group-item"><%= restaurant.name </strong>%>
+    <%# <li class="list-group-item"><%= restaurant.category %>
+    <%# <li class="list-group-item"><%= restaurant.address %>
+    <%# <li class="list-group-item"><%= restaurant.phone_number %>
+    <%# </li> %>
+    <%= link_to restaurant.name, restaurant %>
+    <p><%= restaurant.category %></p>
+    <p><%= restaurant.address %></p>
+    <p><%= restaurant.phone_number %></p>
+    <br>
+  <% end %>
+</div>
